@@ -72,6 +72,13 @@ Use Django's browsable API in a browser while logged in, or a REST client with t
 - `GET /api/analytics/summary/`
 - `POST /api/analytics/charts/`
 
+- http://127.0.0.1:8000/register/
+
+- Separate role-based dashboards:
+  - Admin: `/dashboard/admin/`
+  - Food Provider: `/dashboard/provider/`
+  - NGO/Volunteer: `/dashboard/ngo/`
+- The root URL `/` redirects each logged-in user to the correct dashboard automatically.
 A valid food waste JSON body is:
 
 ```json
