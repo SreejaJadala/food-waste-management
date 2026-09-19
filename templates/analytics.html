@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<nav>
+    <a href="/">Dashboard</a>
+    <a href="/food/">Food waste</a>
+    <a href="/analytics/">Analytics</a>
+    <button id="logout">Logout</button>
+</nav>
+<main>
+    <h1>Waste analytics</h1>
+    <section class="cards">
+        <article>
+            <small>Average waste</small>
+            <strong id="average">0 kg</strong>
+        </article>
+        <article>
+            <small>Maximum waste</small>
+            <strong id="maximum">0 kg</strong>
+        </article>
+        <article>
+            <small>Minimum waste</small>
+            <strong id="minimum">0 kg</strong>
+        </article>
+        <article>
+            <small>Most wasted type</small>
+            <strong id="most-wasted">
+
+            </strong>
+        </article>
+    </section>
+    <section class="panel">
+        <button id="generate-charts">Generate Matplotlib charts</button>
+        <div class="chart-grid" id="chart-box">
+
+        </div>
+    </section>
+</main>
+<script src="{% static 'js/script.js' %}">
+
+</script>
+</body>
+</html>
