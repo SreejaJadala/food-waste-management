@@ -3,3 +3,5 @@
 __pycache__/
 *.py[cod]
 static/charts/*.png
+build_tailored_resume.py
+tmp/
